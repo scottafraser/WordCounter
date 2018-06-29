@@ -7,7 +7,7 @@ namespace WordCounter
 
         private string _userString1;
         private string _userString2;
-        private int _x = 0;
+        private int _x;
 
 
         public void SetStringOne(string word)
@@ -37,6 +37,7 @@ namespace WordCounter
 
         public int GetVarX()
         {
+            _x = 0;
             return _x;
         }
 

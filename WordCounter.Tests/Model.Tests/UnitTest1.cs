@@ -24,6 +24,15 @@ namespace WordCounter.Tests
         }
 
         [TestMethod]
+        public void GetSetVarX_GetsSetsVarX_Int()
+        {
+            RepeatCounter TestCounter = new RepeatCounter();
+            int testInt = 0;
+            TestCounter.SetVarX(testInt);
+            Assert.AreEqual(testInt, TestCounter.GetVarX());
+        }
+
+        [TestMethod]
         public void SplitList_String2toSplit_SplitStringArray()
         {
             RepeatCounter TestCounter = new RepeatCounter();
