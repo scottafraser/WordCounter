@@ -2866,6 +2866,9 @@
       "WordCounter/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v1.1",
+        "dependencies": {
+          "Microsoft.NETCore.App": "1.1.2"
+        },
         "compile": {
           "bin/placeholder/WordCounter.dll": {}
         },
@@ -8556,10 +8559,10 @@
       "projectName": "WordCounter.Tests",
       "projectPath": "/Users/Scottfraser/Desktop/WordCounter/WordCounter.Tests/WordCounter.Tests.csproj",
       "packagesPath": "/Users/Scottfraser/.nuget/packages/",
-      "outputPath": "/Users/Scottfraser/Desktop/WordCounter/WordCounter.Tests/obj",
+      "outputPath": "/Users/Scottfraser/Desktop/WordCounter/WordCounter.Tests/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/Users/Scottfraser/.config/NuGet/NuGet.Config"
+        "/Users/Scottfraser/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp1.1"
@@ -8586,23 +8589,22 @@
     "frameworks": {
       "netcoreapp1.1": {
         "dependencies": {
-          "Microsoft.NETCore.App": {
-            "suppressParent": "All",
-            "target": "Package",
-            "version": "1.1.2",
-            "autoReferenced": true
-          },
-          "Microsoft.NET.Test.Sdk": {
-            "target": "Package",
-            "version": "15.3.0-preview-20170427-09"
-          },
           "MSTest.TestAdapter": {
             "target": "Package",
-            "version": "1.1.17"
+            "version": "[1.1.17, )"
           },
           "MSTest.TestFramework": {
             "target": "Package",
-            "version": "1.1.17"
+            "version": "[1.1.17, )"
+          },
+          "Microsoft.NET.Test.Sdk": {
+            "target": "Package",
+            "version": "[15.3.0-preview-20170427-09, )"
+          },
+          "Microsoft.NETCore.App": {
+            "target": "Package",
+            "version": "[1.1.2, )",
+            "autoReferenced": true
           }
         }
       }

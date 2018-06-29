@@ -34,7 +34,9 @@ namespace WordCounter
         {
             string getString = phrase;
             string[] splitString = getString.Split(' ');
+            Console.WriteLine(splitString[1]);
             return splitString;
+
         }
 
 

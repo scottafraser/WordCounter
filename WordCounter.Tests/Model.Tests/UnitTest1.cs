@@ -28,9 +28,8 @@ namespace WordCounter.Tests
         {
             RepeatCounter TestCounter = new RepeatCounter();
             string testPhrase = "this is a test";
-            string[] testSplit = { "this", " is ", "a", "test" };
-            TestCounter.splitWord(testPhrase);
-            Assert.AreEqual(testSplit, TestCounter.splitWord(testPhrase));
+            string[] testSplit = { "this", "is", "a", "test" };
+            CollectionAssert.AreEqual(testSplit, TestCounter.splitWord(testPhrase));
         }
 
 
