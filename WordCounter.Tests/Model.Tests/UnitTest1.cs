@@ -1,4 +1,5 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using System;
 
 namespace WordCounter.Tests
 {
@@ -45,8 +46,25 @@ namespace WordCounter.Tests
         public void DigitCheck_CheckCharinStringforDigit_Bool()
         {
             RepeatCounter TestCounter = new RepeatCounter();
-            string testString = "hello 123";
+            string testString = "hello123";
             Assert.AreEqual(false, TestCounter.CorrectInput(testString));
+        }
+
+        [TestMethod]
+        public void StringCheck_CheckForSpace_Bool()
+        {
+            RepeatCounter TestCounter = new RepeatCounter();
+            string testString = "hello dude";
+            Assert.AreEqual(false, TestCounter.CorrectInput(testString));
+        }
+
+        [TestMethod]
+        public void StringCheck_CheckForNull_Bool()
+        {
+            RepeatCounter TestCounter = new RepeatCounter();
+            string testString = null ;
+            Console.WriteLine(testString);
+            Assert.AreEqual(true, TestCounter.IsNull(testString));
         }
 
 
