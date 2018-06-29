@@ -7,6 +7,7 @@ namespace WordCounter
 
         private string _userString1;
         private string _userString2;
+        public int x = 0;
 
 
         public void SetStringOne(string word)
@@ -29,9 +30,18 @@ namespace WordCounter
             return _userString2;
         }
 
+        public string[] splitWord(string phrase)
+        {
+            string getString = phrase;
+            string[] splitString = getString.Split(' ');
+            return splitString;
+        }
+
+
+   
         static void Main()
         {
-           
+          
 
         }
     }
