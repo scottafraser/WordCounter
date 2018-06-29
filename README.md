@@ -16,7 +16,7 @@ This is a program that checks how frequently a word appears in a given string. T
 |If user enters capital letters, the program makes them all lowercase| "HeLlO"| "hello"|
 |User inputs several words and program saves it as a string *empty and number errors apply, all words made lowercase as well*| "hello word"|"hello world"|
 |The program takes list of words and splits it into a string array| "hello word"| { "hello", "world" }
-|The program
+|The program compares each string in string array to original user input word and counts instances of a match| "hello hello world"| 2|
 
 ## Setup/Contribution Requirements
 
