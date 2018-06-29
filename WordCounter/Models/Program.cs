@@ -4,11 +4,9 @@ namespace WordCounter
 {
     public class RepeatCounter
     {
-
         private string _userString1;
         private string _userString2;
         private int _x;
-
 
         public void SetStringOne(string word)
         {
@@ -47,7 +45,6 @@ namespace WordCounter
             return lowerString;
         }
 
-    
         public bool CorrectInput(string input)
         {
             bool test = true;
@@ -97,13 +94,11 @@ namespace WordCounter
 
         }
 
-     
         public string[] splitWord(string phrase)
         {
             string getString = phrase;
             string[] splitString = getString.Split(' ');
             return splitString;
-
         }
    
         public int CheckString(string[] array)
