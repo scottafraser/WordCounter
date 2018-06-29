@@ -12,7 +12,7 @@ namespace WordCounter
 
         public void SetStringOne(string word)
         {
-            _userString1 = word;
+            _userString1 = toLowerCase(word);
         }
 
         public string GetStringOne()
@@ -22,7 +22,7 @@ namespace WordCounter
 
         public void SetStringTwo(string word)
         {
-            _userString2 = word;
+            _userString2 = toLowerCase(word);
         }
 
         public string GetStringTwo()
@@ -41,17 +41,50 @@ namespace WordCounter
             return _x;
         }
 
+        public string toLowerCase(string input)
+        {
+            string lowerString = input.ToLower();
+            return lowerString;
+        }
+
+        public bool CorrectInput(string input)
+        {
+            bool test = true;
+            foreach (char letter in input)
+            {
+                if (char.IsDigit(letter) || input.Contains(" "))
+                {
+                    test = false;
+                }
+                else
+                {
+                    test = true;
+                }
+            }
+
+            return test;
+        }
+
+        public bool IsNull(string input)
+        {
+            if (string.IsNullOrEmpty(input))
+            {
+                return true;
+            }
+            return false;
+        }
+
+     
         public string[] splitWord(string phrase)
         {
             string getString = phrase;
             string[] splitString = getString.Split(' ');
-            Console.WriteLine(splitString[1]);
             return splitString;
 
         }
    
         public int CheckString(string[] array)
-        {
+        {   
             int x = GetVarX();
             foreach (string word in array)
             {
