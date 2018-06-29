@@ -33,6 +33,16 @@ namespace WordCounter.Tests
         }
 
         [TestMethod]
+        public void Lowercase_StringtoLower_String()
+        {
+            RepeatCounter TestCounter = new RepeatCounter();
+            string testString = "hElLo";
+            string testString2 = "hello";
+            Assert.AreEqual(testString2, TestCounter.toLowerCase(testString));
+        }
+
+
+        [TestMethod]
         public void SplitList_String2toSplit_SplitStringArray()
         {
             RepeatCounter TestCounter = new RepeatCounter();
