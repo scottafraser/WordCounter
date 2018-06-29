@@ -62,9 +62,32 @@ namespace WordCounter.Tests
         public void StringCheck_CheckForNull_Bool()
         {
             RepeatCounter TestCounter = new RepeatCounter();
-            string testString = null ;
-            Console.WriteLine(testString);
+            string testString = null;
             Assert.AreEqual(true, TestCounter.IsNull(testString));
+        }
+
+        [TestMethod]
+        public void AlertCheckSpace_AlertifIvalidInput_Bool()
+        {
+            RepeatCounter TestCounter = new RepeatCounter();
+            string testString = "hello dude";
+            Assert.AreEqual(true, TestCounter.ErrorAlert(testString));
+        }
+
+        [TestMethod]
+        public void AlertCheckEmpty_AlertifIvalidInput_Bool()
+        {
+            RepeatCounter TestCounter = new RepeatCounter();
+            string testEmptyString = "";
+            Assert.AreEqual(true, TestCounter.ErrorAlert(testEmptyString));
+        }
+
+        [TestMethod]
+        public void AlertCheckNull_AlertifIvalidInput_Bool()
+        {
+            RepeatCounter TestCounter = new RepeatCounter();
+            string testNullString = null;
+            Assert.AreEqual(true, TestCounter.ErrorAlert(testNullString));
         }
 
 

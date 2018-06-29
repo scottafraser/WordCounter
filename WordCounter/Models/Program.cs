@@ -47,18 +47,25 @@ namespace WordCounter
             return lowerString;
         }
 
+    
         public bool CorrectInput(string input)
         {
             bool test = true;
-            foreach (char letter in input)
+            if (IsNull(input) == true)
             {
-                if (char.IsDigit(letter) || input.Contains(" "))
+                test = false;
+            }
+            else {
+                foreach (char letter in input)
                 {
-                    test = false;
-                }
-                else
-                {
-                    test = true;
+                    if (char.IsDigit(letter) || input.Contains(" "))
+                    {
+                        test = false;
+                    }
+                    else
+                    {
+                        test = true;
+                    }
                 }
             }
 
@@ -71,7 +78,23 @@ namespace WordCounter
             {
                 return true;
             }
-            return false;
+            else
+            {
+                return false;
+            }
+        }
+
+        public bool ErrorAlert(string alert)
+        {
+            if (CorrectInput(alert) == false)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+
         }
 
      
