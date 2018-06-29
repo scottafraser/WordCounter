@@ -1,0 +1,11 @@
+/Users/Scottfraser/Desktop/WordCounter/WordCounter/obj/Debug/netcoreapp1.1/WordCounter.csprojResolveAssemblyReference.cache
+/Users/Scottfraser/Desktop/WordCounter/WordCounter/obj/Debug/netcoreapp1.1/WordCounter.csproj.CoreCompileInputs.cache
+/Users/Scottfraser/Desktop/WordCounter/WordCounter/obj/Debug/netcoreapp1.1/WordCounter.AssemblyInfoInputs.cache
+/Users/Scottfraser/Desktop/WordCounter/WordCounter/obj/Debug/netcoreapp1.1/WordCounter.AssemblyInfo.cs
+/Users/Scottfraser/Desktop/WordCounter/WordCounter/bin/Debug/netcoreapp1.1/WordCounter.deps.json
+/Users/Scottfraser/Desktop/WordCounter/WordCounter/bin/Debug/netcoreapp1.1/WordCounter.runtimeconfig.json
+/Users/Scottfraser/Desktop/WordCounter/WordCounter/bin/Debug/netcoreapp1.1/WordCounter.runtimeconfig.dev.json
+/Users/Scottfraser/Desktop/WordCounter/WordCounter/bin/Debug/netcoreapp1.1/WordCounter.dll
+/Users/Scottfraser/Desktop/WordCounter/WordCounter/bin/Debug/netcoreapp1.1/WordCounter.pdb
+/Users/Scottfraser/Desktop/WordCounter/WordCounter/obj/Debug/netcoreapp1.1/WordCounter.dll
+/Users/Scottfraser/Desktop/WordCounter/WordCounter/obj/Debug/netcoreapp1.1/WordCounter.pdb

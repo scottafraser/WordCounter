@@ -2,11 +2,37 @@
 
 namespace WordCounter
 {
-    class Program
+    public class RepeatCounter
     {
-        static void Main(string[] args)
+
+        private string _userString1;
+        private string _userString2;
+
+
+        public void SetStringOne(string word)
         {
-            Console.WriteLine("Hello World!");
+            _userString1 = word;
+        }
+
+        public string GetStringOne()
+        {
+            return _userString1;
+        }
+
+        public void SetStringTwo(string word)
+        {
+            _userString2 = word;
+        }
+
+        public string GetStringTwo()
+        {
+            return _userString2;
+        }
+
+        static void Main()
+        {
+           
+
         }
     }
 }

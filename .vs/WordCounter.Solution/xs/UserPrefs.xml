@@ -1,0 +1,15 @@
+﻿<Properties StartupConfiguration="{4EF379F9-FBE9-42AA-BCF8-5EC1BAE9BF6A}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="WordCounter.Tests/Model.Tests/UnitTest1.cs">
+    <Files>
+      <File FileName="WordCounter/Models/Program.cs" Line="30" Column="10" />
+      <File FileName="WordCounter.Tests/Model.Tests/UnitTest1.cs" Line="1" Column="1" NotebookId="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.ItemProperties.WordCounter PreferredExecutionTarget="MonoDevelop.Default" FirstBuild="True" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+</Properties>
