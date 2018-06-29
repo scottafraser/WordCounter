@@ -41,6 +41,14 @@ namespace WordCounter.Tests
             Assert.AreEqual(testString2, TestCounter.toLowerCase(testString));
         }
 
+        [TestMethod]
+        public void DigitCheck_CheckCharinStringforDigit_Bool()
+        {
+            RepeatCounter TestCounter = new RepeatCounter();
+            string testString = "hello 123";
+            Assert.AreEqual(false, TestCounter.CorrectInput(testString));
+        }
+
 
         [TestMethod]
         public void SplitList_String2toSplit_SplitStringArray()
