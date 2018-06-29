@@ -7,7 +7,7 @@ namespace WordCounter
 
         private string _userString1;
         private string _userString2;
-        public int x = 0;
+        private int _x = 0;
 
 
         public void SetStringOne(string word)
@@ -30,6 +30,16 @@ namespace WordCounter
             return _userString2;
         }
 
+        public void SetVarX(int x)
+        {
+            _x = x;
+        }
+
+        public int GetVarX()
+        {
+            return _x;
+        }
+
         public string[] splitWord(string phrase)
         {
             string getString = phrase;
@@ -38,9 +48,20 @@ namespace WordCounter
             return splitString;
 
         }
-
-
    
+        public int CheckString(string[] array)
+        {
+            int x = GetVarX();
+            foreach (string word in array)
+            {
+                if (word == GetStringOne())
+                {
+                    x++;
+                }
+            }
+            return x;
+        }
+
         static void Main()
         {
           

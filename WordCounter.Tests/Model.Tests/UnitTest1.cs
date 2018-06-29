@@ -32,6 +32,17 @@ namespace WordCounter.Tests
             CollectionAssert.AreEqual(testSplit, TestCounter.splitWord(testPhrase));
         }
 
+        [TestMethod]
+        public void CompareWithInput_IfForEachArray_CompareSplitString()
+        {
+            RepeatCounter TestCounter = new RepeatCounter();
+            string test = "test";
+            TestCounter.SetStringOne(test);
+            TestCounter.GetStringOne();
+            string[] testSplit = { "this", "test", "is", "a", "test" };
+            int testInt = 2;
+            Assert.AreEqual(testInt, TestCounter.CheckString(testSplit));
+        }
 
 
     }
